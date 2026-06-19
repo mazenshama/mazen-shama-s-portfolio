@@ -426,6 +426,36 @@ body {
     text-align: center;
 }
 
+.project-link {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 6px;
+    /* المسافة بين النص والأيقونة */
+    text-decoration: none;
+    /* لو حابب تشيل الخط اللي تحت اللينك */
+    color: inherit;
+    /* بياخد نفس لون النص الأصلي */
+}
+
+.link-icon {
+    width: 14px;
+    height: 14px;
+    opacity: 0.8;
+    /* تقليل وضوح الأيقونة شوية عشان تكون هادية */
+    transition: transform 0.3s ease;
+    /* تأثير حركة ناعم */
+}
+
+
+/* تأثير بسيط لما الماوس ييجي على اللينك */
+
+.project-link:hover .link-icon {
+    transform: translate(2px, -2px);
+    /* الأيقونة بتتحرك لفوق ويمين شوية */
+    opacity: 1;
+}
+
 .work-cards {
     display: grid;
     gap: 20px;
