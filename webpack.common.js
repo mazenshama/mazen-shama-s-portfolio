@@ -1,5 +1,5 @@
 const path = require('path');
-
+const CopyPlugin = require('copy-webpack-plugin');
 module.exports = {
     entry: {
         app: './js/portfolio.js',
@@ -9,4 +9,11 @@ module.exports = {
         clean: true,
         filename: './js/portfolio.js',
     },
+    plugins: [
+      new CopyPlugin({
+  patterns: [
+    { from: "sitemap.xml", to: "" },
+  ],
+}),
+    ]
 };
