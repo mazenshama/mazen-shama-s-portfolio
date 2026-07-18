@@ -12,7 +12,7 @@ module.exports = {
     plugins: [
       new CopyPlugin({
   patterns: [
-    { from: "sitemap.xml", to: "" },
+    { from: "portfolio-sitemap.xml", to: "" },
   ],
 }),
     ]
